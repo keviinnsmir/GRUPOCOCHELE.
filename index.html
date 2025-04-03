@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Cochele</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+
+    <!-- Video de portada -->
+    <section class="hero">
+        <video autoplay muted loop class="hero-video">
+            <source src="VID-20221030-WA0015.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay">
+            <div class="hero-content">
+                <img src="LOGO COCHELE SOLO PNG.png" alt="Logo Cochele" class="hero-logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menú de navegación -->
+    <header class="header">
+        <!-- Logo de tu empresa -->
+        <div class="logo-container">
+            <img src="LOGO COCHELE SOLO PNG.png" alt="Logo Cochele" class="nav-logo">
+        </div>
+
+        <!-- Barra de navegación -->
+        <nav class="nav-bar">
+            <ul class="nav-links">
+                <li class="nav-item">
+                    <a href="#">Inicio</a>
+                    <ul class="dropdown">
+                        <li><a href="quienessomos.html">Quiénes Somos</a></li>
+                        <li><a href="galeria.html">Galería</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Servicios</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Smart Mobility</a></li>
+                        <li><a href="#">Smart Solar</a></li>
+                        <li><a href="#">PYNE</a></li>
+                        <li><a href="#">Gestores de Empresa</a></li>
+                        <li><a href="#">Particulares</a></li>
+                        <li><a href="#">Cochele Energía</a></li>
+                        <li><a href="#">Realista Energía</a></li>
+                        <li><a href="#">Cochele Cargadores</a></li>
+                        <li><a href="#">Cochele Solar</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Colaboradores</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Iberdrola</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#">Contacto</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Política de Privacidad</a></li>
+                        <li><a href="#">Protección de Datos</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Logo de Iberdrola (colaborador) -->
+        <div class="collaborator-logo">
+            <img src="LOGOTIPOS COLABORADOR  RECTANGULARES BLANCO.png" alt="Logo Iberdrola" class="collaborator-logo-img">
+        </div>
+
+        <!-- Menú hamburguesa para dispositivos móviles -->
+        <div class="hamburger" onclick="toggleMenu()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Introducción -->
+    <section class="intro">
+        <h2>¿Quiénes Somos?</h2>
+        <p>En Grupo Cochele, lideramos la transición energética con soluciones innovadoras que impulsan un futuro sostenible. Nos especializamos en movilidad eléctrica y energía solar, comprometidos con el medio ambiente y el bienestar de las personas.</p>
+        <p>Creemos que la sostenibilidad es la clave para un mundo mejor, y cada proyecto que realizamos está diseñado con esta visión en mente. Desde soluciones para empresas hasta particulares, estamos aquí para hacer del futuro un lugar más verde y eficiente.</p>
+    </section>
+    <div class="arrow">&#8595;</div> <!-- Flecha animada -->
+
+    <!-- Sección de Valores y Misión -->
+    <section class="values">
+        <h2>Nuestros Valores</h2>
+        <div class="values-container">
+            <div class="value">
+                <h3>Innovación</h3>
+                <p>Siempre estamos buscando nuevas formas de hacer las cosas, ofreciendo soluciones que marcan la diferencia.</p>
+            </div>
+            <div class="value">
+                <h3>Sostenibilidad</h3>
+                <p>Comprometidos con un futuro más verde, promovemos energías renovables y movilidad eléctrica.</p>
+            </div>
+            <div class="value">
+                <h3>Compromiso</h3>
+                <p>Trabajamos con integridad y responsabilidad, asegurando la calidad y el impacto positivo de nuestros proyectos.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Iberdrola | Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
