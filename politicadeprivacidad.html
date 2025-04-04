@@ -82,8 +82,7 @@
         </video>
         <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Bienvenidos a Nuestro Sitio</h1>
-            <p>Explora nuestros servicios</p>
+            <h1>Tu Privacidad, Nuestra Prioridad: Protección de Datos en Grupo Cochele</h1>
         </div>
     </div>
 
@@ -147,5 +146,33 @@
     </div>
 
     <script src="script2.js"></script> <!-- Enlazamos con el JS -->
+    <script>
+        // Configuración de EmailJS
+        emailjs.init("service_c5ngmjf"); // Sustituir con tu user ID
+
+        // Evento para enviar el formulario
+        document.getElementById("privacyForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevenir el comportamiento por defecto
+
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            var message = document.getElementById("message").value;
+
+            var templateParams = {
+                name: name,
+                email: email,
+                message: message
+            };
+
+            emailjs.send("service_yourServiceID", "template_yourTemplateID", templateParams)
+                .then(function(response) {
+                    alert("¡Mensaje enviado correctamente!");
+                    console.log("Success", response);
+                }, function(error) {
+                    alert("Hubo un error. Por favor, inténtalo de nuevo.");
+                    console.log("Error", error);
+                });
+        });
+    </script>
 </body>
 </html>

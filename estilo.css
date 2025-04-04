@@ -44,7 +44,7 @@ body {
 }
 
 .hero-logo {
-    width: 1000px;
+    width: 800px;
     transition: transform 0.5s ease;
 }
 
@@ -119,7 +119,7 @@ body {
 }
 
 /* Estilo para los dropdowns */
-.nav-item:hover .dropdown {
+.nav-item.active .dropdown {
     display: block;
     opacity: 1;
     visibility: visible;
@@ -127,12 +127,12 @@ body {
 }
 
 .dropdown {
-    display: none;
+    display: none; /* Inicialmente oculto */
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #fff;
-    width: 160px;
+    width: 140px;
     list-style: none;
     padding: 5px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -171,7 +171,7 @@ body {
 }
 
 .dropdown a:hover {
-    color: #ffffff;
+    color: #0a0909;
 }
 
 /* Animación de aparición para los items del dropdown */
@@ -196,7 +196,7 @@ body {
 .hamburger .line {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(0, 0, 0);
     margin: 5px 0;
 }
 
